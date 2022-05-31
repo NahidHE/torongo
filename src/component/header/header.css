@@ -1,0 +1,43 @@
+.header-container{
+    padding:10px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.80);
+}
+
+nav{
+    display: flex;
+    width: 50%;
+    gap: 50px;
+    align-items: center;
+}
+.search{
+    flex: 1;
+    width: 100%;
+}
+.search form {
+    display: flex;
+}
+
+input, button{
+    height: 40px;
+    border: 0;
+    outline: 0;
+}
+input{
+    flex: 1;
+    text-indent: 10px;
+
+}
+button{
+    width: 40px;
+}
+
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.25rem;
+}

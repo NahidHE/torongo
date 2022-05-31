@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+img{
+  width: 100%;
+  height: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app{
+  height: 100vh;
+  width: 100%;
+  background: url('images/bg1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  font-family: 'Ubuntu', sans-serif;
+  overflow-y: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.media-container{
+  padding: 20px 100px;
+  background-color: rgba(0, 0, 0, 0.4);
   display: flex;
-  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.play{
+  width: 70%;
+  height: 90%;
+}
+.search-result{
+  width: 30%;
+  height: 90%;
+  overflow-y: scroll;
+}
+
+.item{
+  padding:5px;
+  margin-bottom: 5px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.40);
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  gap: 10px;
+  overflow: hidden;
 }
