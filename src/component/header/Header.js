@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./header.css";
-import SearchResult from "../searchResult/SearchResult";
+import info from "../../data/info";
 
 export default function Header() {
   const name = "torongo";
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchTerm, setSearchTerm] = useState("music");
   const handleChange = (event) => {
     setSearchTerm(event.target.value);
   };
@@ -16,10 +16,10 @@ export default function Header() {
       <nav>
         <div className="search">
           <form
-            action=""
             onSubmit={(event) => {
               event.preventDefault();
-              SearchResult(searchTerm);
+              info.searchTerm = searchTerm;
+              console.log(info);
             }}
           >
             <input
